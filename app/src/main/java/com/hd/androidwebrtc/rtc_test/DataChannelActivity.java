@@ -46,14 +46,12 @@ public class DataChannelActivity extends AppCompatActivity {
 
     @SuppressWarnings("ResultOfMethodCallIgnored")
     @Override
-    public void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) { //Starts here
         super.onCreate(savedInstanceState);
         binding = DataBindingUtil.setContentView(this, R.layout.activity_sample_data_channel);
 
-        initializePeerConnectionFactory();
-//        initializePeerConnections();
-//        connectToOtherPeer();
-        initializeMyPeerConnection();
+        initializePeerConnectionFactory(); //Android Specific, you can Ignore.
+        initializeMyPeerConnection(); // Connection Initialization.
         startConnection();
     }
 
@@ -83,7 +81,7 @@ public class DataChannelActivity extends AppCompatActivity {
         Log.d(TAG, "initializeMyPeerConnection: Starting Initialization...");
         mainPeerConnectoin = createPeerConnection(factory, true);
 
-        mainDataChannel = mainPeerConnectoin.createDataChannel("sendDataChannel", new DataChannel.Init());
+        mainDataChannel = mainPeerConnectoin.createDataChannel("sendDataChannel", new DataChannel.Init()); //Setting the data channel.
         mainDataChannel.registerObserver(new DataChannel.Observer() {
             @Override
             public void onBufferedAmountChange(long l) {
@@ -92,6 +90,7 @@ public class DataChannelActivity extends AppCompatActivity {
 
             @Override
             public void onStateChange() {
+                //Data channel state change
                 Log.d(TAG, "onStateChange: " + localDataChannel.state().toString());
                 runOnUiThread(() -> {
                     if (localDataChannel.state() == DataChannel.State.OPEN) {
@@ -112,7 +111,7 @@ public class DataChannelActivity extends AppCompatActivity {
 
     private PeerConnection createPeerConnection(PeerConnectionFactory factory, boolean isLocal) {
         List<PeerConnection.IceServer> iceServers = new LinkedList<>();
-        iceServers.add(new PeerConnection.IceServer("stun:stun.l.google.com:19302"));
+        iceServers.add(new PeerConnection.IceServer("stun:stun.l.google.com:19302")); //Setting our custom STUN server.
 
         PeerConnection.RTCConfiguration rtcConfig = new PeerConnection.RTCConfiguration(iceServers);
         MediaConstraints pcConstraints = new MediaConstraints();
@@ -137,6 +136,7 @@ public class DataChannelActivity extends AppCompatActivity {
             public void onIceGatheringChange(PeerConnection.IceGatheringState iceGatheringState) {
                 Log.d(TAG, "onIceGatheringChange: " + iceGatheringState);
                 if (iceGatheringState.compareTo(PeerConnection.IceGatheringState.COMPLETE) == 0) {
+                    //If ICE gathering is completed, we are logging the SDP. At this point ICE trickling is completed and SDP is ready.
                     Log.d(TAG, "onIceGatheringChange: " + mainPeerConnectoin.getLocalDescription().description);
                     runOnUiThread(() -> {
                         Toast.makeText(DataChannelActivity.this, "ICE Gathering Finished", Toast.LENGTH_SHORT).show();
@@ -146,6 +146,7 @@ public class DataChannelActivity extends AppCompatActivity {
 
             @Override
             public void onIceCandidate(IceCandidate iceCandidate) {
+                //Fired after each ICE candidate is gathered. AKA ICE trickling.
                 Log.d(TAG, "onIceCandidate: SDP:" + iceCandidate.sdp);
                 mainPeerConnectoin.addIceCandidate(iceCandidate);
             }
