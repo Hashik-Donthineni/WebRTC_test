@@ -52,11 +52,12 @@ public class DataChannelActivity extends AppCompatActivity {
 
         initializePeerConnectionFactory(); //Android Specific, you can Ignore.
         initializeMyPeerConnection(); // Connection Initialization.
-        startConnection();
+        startConnection(); //Getting the offer
     }
 
     private void startConnection() {
         Log.d(TAG, "startConnection: Starting Connection...");
+        //CreateOffer fires the request to get ICE candidates and finish the SDP. We can listen to all these events on the corresponding observers.
         mainPeerConnectoin.createOffer(new SimpleSdpObserver() {
             @Override
             public void onCreateSuccess(SessionDescription sessionDescription) {
@@ -136,7 +137,7 @@ public class DataChannelActivity extends AppCompatActivity {
             public void onIceGatheringChange(PeerConnection.IceGatheringState iceGatheringState) {
                 Log.d(TAG, "onIceGatheringChange: " + iceGatheringState);
                 if (iceGatheringState.compareTo(PeerConnection.IceGatheringState.COMPLETE) == 0) {
-                    //If ICE gathering is completed, we are logging the SDP. At this point ICE trickling is completed and SDP is ready.
+                    //If ICE gathering is completed\. At this point ICE trickling is completed and SDP is ready.
                     Log.d(TAG, "onIceGatheringChange: " + mainPeerConnectoin.getLocalDescription().description);
                     runOnUiThread(() -> {
                         Toast.makeText(DataChannelActivity.this, "ICE Gathering Finished", Toast.LENGTH_SHORT).show();
