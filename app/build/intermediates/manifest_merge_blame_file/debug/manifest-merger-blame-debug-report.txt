@@ -1,0 +1,178 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.hd.androidwebrtc"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+8-->/home/hashik_i3/StudioProjects/Android-WebRtc/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->/home/hashik_i3/StudioProjects/Android-WebRtc/app/src/main/AndroidManifest.xml
+10
+11    <uses-feature android:name="android.hardware.camera" />
+11-->/home/hashik_i3/StudioProjects/Android-WebRtc/app/src/main/AndroidManifest.xml:5:5-60
+11-->/home/hashik_i3/StudioProjects/Android-WebRtc/app/src/main/AndroidManifest.xml:5:19-57
+12    <uses-feature android:name="android.hardware.camera.autofocus" />
+12-->/home/hashik_i3/StudioProjects/Android-WebRtc/app/src/main/AndroidManifest.xml:6:5-70
+12-->/home/hashik_i3/StudioProjects/Android-WebRtc/app/src/main/AndroidManifest.xml:6:19-67
+13    <uses-feature
+13-->/home/hashik_i3/StudioProjects/Android-WebRtc/app/src/main/AndroidManifest.xml:7:5-9:35
+14        android:glEsVersion="0x00020000"
+14-->/home/hashik_i3/StudioProjects/Android-WebRtc/app/src/main/AndroidManifest.xml:8:9-41
+15        android:required="true" />
+15-->/home/hashik_i3/StudioProjects/Android-WebRtc/app/src/main/AndroidManifest.xml:9:9-32
+16
+17    <uses-permission android:name="android.permission.CAMERA" />
+17-->/home/hashik_i3/StudioProjects/Android-WebRtc/app/src/main/AndroidManifest.xml:11:5-65
+17-->/home/hashik_i3/StudioProjects/Android-WebRtc/app/src/main/AndroidManifest.xml:11:22-62
+18    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+18-->/home/hashik_i3/StudioProjects/Android-WebRtc/app/src/main/AndroidManifest.xml:12:5-79
+18-->/home/hashik_i3/StudioProjects/Android-WebRtc/app/src/main/AndroidManifest.xml:12:22-76
+19    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+19-->/home/hashik_i3/StudioProjects/Android-WebRtc/app/src/main/AndroidManifest.xml:13:5-80
+19-->/home/hashik_i3/StudioProjects/Android-WebRtc/app/src/main/AndroidManifest.xml:13:22-77
+20    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+20-->/home/hashik_i3/StudioProjects/Android-WebRtc/app/src/main/AndroidManifest.xml:14:5-71
+20-->/home/hashik_i3/StudioProjects/Android-WebRtc/app/src/main/AndroidManifest.xml:14:22-68
+21    <uses-permission android:name="android.permission.INTERNET" />
+21-->/home/hashik_i3/StudioProjects/Android-WebRtc/app/src/main/AndroidManifest.xml:15:5-67
+21-->/home/hashik_i3/StudioProjects/Android-WebRtc/app/src/main/AndroidManifest.xml:15:22-64
+22    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+22-->/home/hashik_i3/StudioProjects/Android-WebRtc/app/src/main/AndroidManifest.xml:16:5-81
+22-->/home/hashik_i3/StudioProjects/Android-WebRtc/app/src/main/AndroidManifest.xml:16:22-78
+23    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+23-->/home/hashik_i3/StudioProjects/Android-WebRtc/app/src/main/AndroidManifest.xml:17:5-79
+23-->/home/hashik_i3/StudioProjects/Android-WebRtc/app/src/main/AndroidManifest.xml:17:22-76
+24    <uses-permission android:name="android.permission.BLUETOOTH" />
+24-->/home/hashik_i3/StudioProjects/Android-WebRtc/app/src/main/AndroidManifest.xml:18:5-68
+24-->/home/hashik_i3/StudioProjects/Android-WebRtc/app/src/main/AndroidManifest.xml:18:22-65
+25    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+25-->[com.myhexaville:smart-image-picker:1.0.4] /home/hashik_i3/.gradle/caches/transforms-2/files-2.1/9793b27bb6532304b1e215efeafa4c39/smart-image-picker-1.0.4/AndroidManifest.xml:12:5-80
+25-->[com.myhexaville:smart-image-picker:1.0.4] /home/hashik_i3/.gradle/caches/transforms-2/files-2.1/9793b27bb6532304b1e215efeafa4c39/smart-image-picker-1.0.4/AndroidManifest.xml:12:22-77
+26
+27    <application
+27-->/home/hashik_i3/StudioProjects/Android-WebRtc/app/src/main/AndroidManifest.xml:20:5-63:19
+28        android:allowBackup="true"
+28-->/home/hashik_i3/StudioProjects/Android-WebRtc/app/src/main/AndroidManifest.xml:21:9-35
+29        android:debuggable="true"
+30        android:icon="@mipmap/ic_launcher"
+30-->/home/hashik_i3/StudioProjects/Android-WebRtc/app/src/main/AndroidManifest.xml:22:9-43
+31        android:label="@string/app_name"
+31-->/home/hashik_i3/StudioProjects/Android-WebRtc/app/src/main/AndroidManifest.xml:23:9-41
+32        android:supportsRtl="true"
+32-->/home/hashik_i3/StudioProjects/Android-WebRtc/app/src/main/AndroidManifest.xml:24:9-35
+33        android:testOnly="true"
+34        android:theme="@style/AppTheme" >
+34-->/home/hashik_i3/StudioProjects/Android-WebRtc/app/src/main/AndroidManifest.xml:25:9-40
+35        <activity
+35-->/home/hashik_i3/StudioProjects/Android-WebRtc/app/src/main/AndroidManifest.xml:26:9-29:55
+36            android:name="com.hd.androidwebrtc.app_rtc_sample.main.AppRTCMainActivity"
+36-->/home/hashik_i3/StudioProjects/Android-WebRtc/app/src/main/AndroidManifest.xml:27:13-87
+37            android:label="@string/app_name"
+37-->/home/hashik_i3/StudioProjects/Android-WebRtc/app/src/main/AndroidManifest.xml:28:13-45
+38            android:windowSoftInputMode="adjustPan" />
+38-->/home/hashik_i3/StudioProjects/Android-WebRtc/app/src/main/AndroidManifest.xml:29:13-52
+39        <activity
+39-->/home/hashik_i3/StudioProjects/Android-WebRtc/app/src/main/AndroidManifest.xml:30:9-35:52
+40            android:name="com.hd.androidwebrtc.app_rtc_sample.call.CallActivity"
+40-->/home/hashik_i3/StudioProjects/Android-WebRtc/app/src/main/AndroidManifest.xml:31:13-81
+41            android:configChanges="orientation|screenSize"
+41-->/home/hashik_i3/StudioProjects/Android-WebRtc/app/src/main/AndroidManifest.xml:32:13-59
+42            android:label="@string/app_name"
+42-->/home/hashik_i3/StudioProjects/Android-WebRtc/app/src/main/AndroidManifest.xml:33:13-45
+43            android:screenOrientation="fullUser"
+43-->/home/hashik_i3/StudioProjects/Android-WebRtc/app/src/main/AndroidManifest.xml:34:13-49
+44            android:theme="@style/AppTheme.Call" />
+44-->/home/hashik_i3/StudioProjects/Android-WebRtc/app/src/main/AndroidManifest.xml:35:13-49
+45        <activity
+45-->/home/hashik_i3/StudioProjects/Android-WebRtc/app/src/main/AndroidManifest.xml:36:9-39:59
+46            android:name="com.hd.androidwebrtc.LauncherActivity"
+46-->/home/hashik_i3/StudioProjects/Android-WebRtc/app/src/main/AndroidManifest.xml:37:13-65
+47            android:label="@string/title_activity_launch"
+47-->/home/hashik_i3/StudioProjects/Android-WebRtc/app/src/main/AndroidManifest.xml:38:13-58
+48            android:theme="@style/AppTheme.NoActionBar" />
+48-->/home/hashik_i3/StudioProjects/Android-WebRtc/app/src/main/AndroidManifest.xml:39:13-56
+49        <activity
+49-->/home/hashik_i3/StudioProjects/Android-WebRtc/app/src/main/AndroidManifest.xml:40:9-43:59
+50            android:name="com.hd.androidwebrtc.rtc_test.CameraRenderActivity"
+50-->/home/hashik_i3/StudioProjects/Android-WebRtc/app/src/main/AndroidManifest.xml:41:13-78
+51            android:label="@string/app_name"
+51-->/home/hashik_i3/StudioProjects/Android-WebRtc/app/src/main/AndroidManifest.xml:42:13-45
+52            android:theme="@style/AppTheme.NoActionBar" />
+52-->/home/hashik_i3/StudioProjects/Android-WebRtc/app/src/main/AndroidManifest.xml:43:13-56
+53        <activity
+53-->/home/hashik_i3/StudioProjects/Android-WebRtc/app/src/main/AndroidManifest.xml:44:9-47:59
+54            android:name="com.hd.androidwebrtc.rtc_test.MediaStreamActivity"
+54-->/home/hashik_i3/StudioProjects/Android-WebRtc/app/src/main/AndroidManifest.xml:45:13-77
+55            android:label="@string/title_activity_sample_peer_connection"
+55-->/home/hashik_i3/StudioProjects/Android-WebRtc/app/src/main/AndroidManifest.xml:46:13-74
+56            android:theme="@style/AppTheme.NoActionBar" />
+56-->/home/hashik_i3/StudioProjects/Android-WebRtc/app/src/main/AndroidManifest.xml:47:13-56
+57        <activity
+57-->/home/hashik_i3/StudioProjects/Android-WebRtc/app/src/main/AndroidManifest.xml:48:9-58:20
+58            android:name="com.hd.androidwebrtc.rtc_test.DataChannelActivity"
+58-->/home/hashik_i3/StudioProjects/Android-WebRtc/app/src/main/AndroidManifest.xml:49:13-77
+59            android:label="@string/title_activity_sample_data_channel"
+59-->/home/hashik_i3/StudioProjects/Android-WebRtc/app/src/main/AndroidManifest.xml:50:13-71
+60            android:theme="@style/AppTheme.NoActionBar" >
+60-->/home/hashik_i3/StudioProjects/Android-WebRtc/app/src/main/AndroidManifest.xml:51:13-56
+61            <intent-filter>
+61-->/home/hashik_i3/StudioProjects/Android-WebRtc/app/src/main/AndroidManifest.xml:53:13-57:29
+62                <action android:name="android.intent.action.MAIN" />
+62-->/home/hashik_i3/StudioProjects/Android-WebRtc/app/src/main/AndroidManifest.xml:54:17-69
+62-->/home/hashik_i3/StudioProjects/Android-WebRtc/app/src/main/AndroidManifest.xml:54:25-66
+63
+64                <category android:name="android.intent.category.LAUNCHER" />
+64-->/home/hashik_i3/StudioProjects/Android-WebRtc/app/src/main/AndroidManifest.xml:56:17-77
+64-->/home/hashik_i3/StudioProjects/Android-WebRtc/app/src/main/AndroidManifest.xml:56:27-74
+65            </intent-filter>
+66        </activity>
+67        <activity
+67-->/home/hashik_i3/StudioProjects/Android-WebRtc/app/src/main/AndroidManifest.xml:59:9-62:59
+68            android:name="com.hd.androidwebrtc.rtc_test.CompleteActivity"
+68-->/home/hashik_i3/StudioProjects/Android-WebRtc/app/src/main/AndroidManifest.xml:60:13-74
+69            android:label="@string/title_activity_complete"
+69-->/home/hashik_i3/StudioProjects/Android-WebRtc/app/src/main/AndroidManifest.xml:61:13-60
+70            android:theme="@style/AppTheme.NoActionBar" />
+70-->/home/hashik_i3/StudioProjects/Android-WebRtc/app/src/main/AndroidManifest.xml:62:13-56
+71        <activity
+71-->[com.myhexaville:smart-image-picker:1.0.4] /home/hashik_i3/.gradle/caches/transforms-2/files-2.1/9793b27bb6532304b1e215efeafa4c39/smart-image-picker-1.0.4/AndroidManifest.xml:18:9-21:47
+72            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+72-->[com.myhexaville:smart-image-picker:1.0.4] /home/hashik_i3/.gradle/caches/transforms-2/files-2.1/9793b27bb6532304b1e215efeafa4c39/smart-image-picker-1.0.4/AndroidManifest.xml:19:13-76
+73            android:screenOrientation="portrait"
+73-->[com.myhexaville:smart-image-picker:1.0.4] /home/hashik_i3/.gradle/caches/transforms-2/files-2.1/9793b27bb6532304b1e215efeafa4c39/smart-image-picker-1.0.4/AndroidManifest.xml:20:13-49
+74            android:theme="@style/AppTheme" />
+74-->[com.myhexaville:smart-image-picker:1.0.4] /home/hashik_i3/.gradle/caches/transforms-2/files-2.1/9793b27bb6532304b1e215efeafa4c39/smart-image-picker-1.0.4/AndroidManifest.xml:21:13-44
+75
+76        <provider
+76-->[com.myhexaville:smart-image-picker:1.0.4] /home/hashik_i3/.gradle/caches/transforms-2/files-2.1/9793b27bb6532304b1e215efeafa4c39/smart-image-picker-1.0.4/AndroidManifest.xml:23:9-31:20
+77            android:name="com.myhexaville.smartimagepicker.CustomFileProvider"
+77-->[com.myhexaville:smart-image-picker:1.0.4] /home/hashik_i3/.gradle/caches/transforms-2/files-2.1/9793b27bb6532304b1e215efeafa4c39/smart-image-picker-1.0.4/AndroidManifest.xml:24:13-79
+78            android:authorities="com.hd.androidwebrtc.smart-image-picket-provider"
+78-->[com.myhexaville:smart-image-picker:1.0.4] /home/hashik_i3/.gradle/caches/transforms-2/files-2.1/9793b27bb6532304b1e215efeafa4c39/smart-image-picker-1.0.4/AndroidManifest.xml:25:13-79
+79            android:exported="false"
+79-->[com.myhexaville:smart-image-picker:1.0.4] /home/hashik_i3/.gradle/caches/transforms-2/files-2.1/9793b27bb6532304b1e215efeafa4c39/smart-image-picker-1.0.4/AndroidManifest.xml:26:13-37
+80            android:grantUriPermissions="true" >
+80-->[com.myhexaville:smart-image-picker:1.0.4] /home/hashik_i3/.gradle/caches/transforms-2/files-2.1/9793b27bb6532304b1e215efeafa4c39/smart-image-picker-1.0.4/AndroidManifest.xml:27:13-47
+81            <meta-data
+81-->[com.myhexaville:smart-image-picker:1.0.4] /home/hashik_i3/.gradle/caches/transforms-2/files-2.1/9793b27bb6532304b1e215efeafa4c39/smart-image-picker-1.0.4/AndroidManifest.xml:28:13-30:54
+82                android:name="android.support.FILE_PROVIDER_PATHS"
+82-->[com.myhexaville:smart-image-picker:1.0.4] /home/hashik_i3/.gradle/caches/transforms-2/files-2.1/9793b27bb6532304b1e215efeafa4c39/smart-image-picker-1.0.4/AndroidManifest.xml:29:17-67
+83                android:resource="@xml/file_paths" />
+83-->[com.myhexaville:smart-image-picker:1.0.4] /home/hashik_i3/.gradle/caches/transforms-2/files-2.1/9793b27bb6532304b1e215efeafa4c39/smart-image-picker-1.0.4/AndroidManifest.xml:30:17-51
+84        </provider>
+85
+86        <activity
+86-->[pub.devrel:easypermissions:1.1.3] /home/hashik_i3/.gradle/caches/transforms-2/files-2.1/1a64a298a5dc1abe53a4501227125306/easypermissions-1.1.3/AndroidManifest.xml:12:9-16:66
+87            android:name="pub.devrel.easypermissions.AppSettingsDialogHolderActivity"
+87-->[pub.devrel:easypermissions:1.1.3] /home/hashik_i3/.gradle/caches/transforms-2/files-2.1/1a64a298a5dc1abe53a4501227125306/easypermissions-1.1.3/AndroidManifest.xml:13:13-86
+88            android:exported="false"
+88-->[pub.devrel:easypermissions:1.1.3] /home/hashik_i3/.gradle/caches/transforms-2/files-2.1/1a64a298a5dc1abe53a4501227125306/easypermissions-1.1.3/AndroidManifest.xml:14:13-37
+89            android:label=""
+89-->[pub.devrel:easypermissions:1.1.3] /home/hashik_i3/.gradle/caches/transforms-2/files-2.1/1a64a298a5dc1abe53a4501227125306/easypermissions-1.1.3/AndroidManifest.xml:15:13-29
+90            android:theme="@style/EasyPermissions.Transparent" />
+90-->[pub.devrel:easypermissions:1.1.3] /home/hashik_i3/.gradle/caches/transforms-2/files-2.1/1a64a298a5dc1abe53a4501227125306/easypermissions-1.1.3/AndroidManifest.xml:16:13-63
+91    </application>
+92
+93</manifest>
